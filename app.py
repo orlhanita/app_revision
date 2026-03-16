@@ -13,4 +13,4 @@ if menu == "Cours":
 elif menu == "Quiz":
     afficher_quiz()
 elif menu == "Exercices":
-    afficher_exercices() 
+    afficher_exercices()
