@@ -1,6 +1,6 @@
 CHAPITRES_ECRIT = {
     "Analyse fonctionnelle": "analyse_fonctionnelle.md",
-    "Modélisation des données (MCD / UML)": "uml.md",
+    "Modélisation des données (MCD / UML)": "mcd_uml.md",
     "SQL": "sql.md",
     "Algorithme / pseudo-code": "algorithme.md",
     "Modélisation des processus": "processus.md",
@@ -45,11 +45,11 @@ PROGRESSION_INIT = {
     "mauvaises_reponses": 0,
     "themes": {
         "Analyse fonctionnelle": {"bonnes": 0, "mauvaises": 0},
-        "Modélisation des données": {"bonnes": 0, "mauvaises": 0},
+        "Modélisation données": {"bonnes": 0, "mauvaises": 0},
         "SQL": {"bonnes": 0, "mauvaises": 0},
         "Algorithme": {"bonnes": 0, "mauvaises": 0},
-        "Architecture SI / API": {"bonnes": 0, "mauvaises": 0},
-        "Conduite de projet": {"bonnes": 0, "mauvaises": 0},
+        "Architecture SI": {"bonnes": 0, "mauvaises": 0},
+        "Conduite projet": {"bonnes": 0, "mauvaises": 0},
         "Technique de l’analyse": {"bonnes": 0, "mauvaises": 0},
         "Logiciel": {"bonnes": 0, "mauvaises": 0},
         "Matériel": {"bonnes": 0, "mauvaises": 0},
