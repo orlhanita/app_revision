@@ -1,16 +1,27 @@
 import streamlit as st
+import copy
+
+from data import PROGRESSION_INIT
+from accueil import afficher_accueil
 from cours import afficher_cours
-from quiz import afficher_quiz
-from exercices import afficher_exercices
-st.set_page_config(page_title="App révision", layout="wide")
-st.title("App de révision – Analyste développeur")
+from entrainement import afficher_entrainement
+
+st.set_page_config(page_title="Révision certification", layout="wide")
+
+# INITIALISATION PROGRESSION
+if "progression" not in st.session_state:
+    st.session_state.progression = copy.deepcopy(PROGRESSION_INIT)
+
 menu = st.sidebar.radio(
     "Navigation",
-    ["Cours", "Quiz", "Exercices"]
+    ["Accueil", "Cours", "Entraînement"]
 )
-if menu == "Cours":
+
+if menu == "Accueil":
+    afficher_accueil()
+
+elif menu == "Cours":
     afficher_cours()
-elif menu == "Quiz":
-    afficher_quiz()
-elif menu == "Exercices":
-    afficher_exercices()
+
+elif menu == "Entraînement":
+    afficher_entrainement()
